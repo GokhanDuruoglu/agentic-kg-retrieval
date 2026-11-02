@@ -1,0 +1,3 @@
+# non-validated with the 5 generic tools (validator off).
+extends: non-validated
+tools: {preset: generic5, descriptions: concise}

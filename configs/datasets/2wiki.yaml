@@ -1,0 +1,8 @@
+name: 2wiki
+questions: data/2wiki/questions_sample200.jsonl
+gold: data/2wiki/gold.jsonl
+corpus: data/2wiki/corpus.jsonl.gz
+kg: data/2wiki/graph/kg.jsonl.gz
+fingerprint: data/2wiki/graph/fingerprint.json
+neo4j_database: paper-2wiki      # overridden by NEO4J_DATABASE in .env
+domain: twowiki

@@ -1,0 +1,227 @@
+[
+ {
+  "type": "function",
+  "function": {
+   "name": "attribute_of_entity",
+   "description": "Value(s) of ONE relation for ONE named entity (a single-hop fact lookup).",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "relation": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "name",
+     "relation"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "compare_attribute",
+   "description": "The same attribute for TWO named entities, side by side; optionally via a bridge relation.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "entity1": {
+      "type": "string"
+     },
+     "entity2": {
+      "type": "string"
+     },
+     "relation": {
+      "type": "string"
+     },
+     "via_relation": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "entity1",
+     "entity2",
+     "relation"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "entities_with_relation_to",
+   "description": "Entities that hold ONE relation pointing at a named entity (reverse lookup).",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "object_name": {
+      "type": "string"
+     },
+     "relation": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "object_name",
+     "relation"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "kin_of",
+   "description": "A named person's relatives of ONE kinship type (father, mother, parent, child, spouse, sibling, grandparent, grandchild, uncle).",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "kinship": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "name",
+     "kinship"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "neighbors",
+   "description": "Entities within `hops` (1-3) of ONE named entity, with the relation type of each direct neighbor.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "hops": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "name"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "passages_for_entity",
+   "description": "Raw source passage text mentioning ONE named entity.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "name"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "relation_between",
+   "description": "Direct (1-hop) relation(s) between TWO named entities, either direction.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "subject": {
+      "type": "string"
+     },
+     "object": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "subject",
+     "object"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "relation_chain",
+   "description": "Two-hop chain from ONE named entity: entity -[relation1]- via -[relation2]- answer.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "relation1": {
+      "type": "string"
+     },
+     "relation2": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "name",
+     "relation1",
+     "relation2"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "shortest_path_between",
+   "description": "Shortest relation path between TWO named entities, via any intermediates.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "subject": {
+      "type": "string"
+     },
+     "object": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "subject",
+     "object"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "triples_with_relation",
+   "description": "All (subject, relation, object) triples for ONE relation type, optionally restricted to a subject.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "relation": {
+      "type": "string"
+     },
+     "subject": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "relation"
+    ]
+   }
+  }
+ }
+]

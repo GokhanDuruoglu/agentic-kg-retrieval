@@ -1,0 +1,4 @@
+# validated + tools: deterministic Cypher builders the query agent may call instead of writing Cypher.
+# The 5 generic graph tools with one-line descriptions.
+extends: validated
+tools: {preset: generic5, descriptions: concise}

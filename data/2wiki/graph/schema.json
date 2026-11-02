@@ -1,0 +1,349 @@
+{
+  "entity_types": [
+    "Person",
+    "Location",
+    "Organization",
+    "Work",
+    "Event",
+    "Date",
+    "Number",
+    "Misc"
+  ],
+  "relations": [
+    {
+      "type": "RELATED_TO",
+      "name": "related to",
+      "count": 15084
+    },
+    {
+      "type": "CAST_MEMBER",
+      "name": "cast_member",
+      "count": 3879
+    },
+    {
+      "type": "PUBLICATION_DATE",
+      "name": "publication_date",
+      "count": 3151
+    },
+    {
+      "type": "DATE_OF_BIRTH",
+      "name": "date_of_birth",
+      "count": 3112
+    },
+    {
+      "type": "LOCATION",
+      "name": "location",
+      "count": 2551
+    },
+    {
+      "type": "DATE_OF_DEATH",
+      "name": "date_of_death",
+      "count": 2547
+    },
+    {
+      "type": "DIRECTOR",
+      "name": "director",
+      "count": 2454
+    },
+    {
+      "type": "TITLE",
+      "name": "title",
+      "count": 1863
+    },
+    {
+      "type": "MEMBER_OF",
+      "name": "member_of",
+      "count": 1465
+    },
+    {
+      "type": "SPOUSE",
+      "name": "spouse",
+      "count": 1341
+    },
+    {
+      "type": "POSITION",
+      "name": "position",
+      "count": 1315
+    },
+    {
+      "type": "WRITER",
+      "name": "writer",
+      "count": 1298
+    },
+    {
+      "type": "CHILD",
+      "name": "child",
+      "count": 1281
+    },
+    {
+      "type": "START_DATE",
+      "name": "start_date",
+      "count": 1207
+    },
+    {
+      "type": "OCCUPATION",
+      "name": "occupation",
+      "count": 1113
+    },
+    {
+      "type": "NATIONALITY",
+      "name": "nationality",
+      "count": 1085
+    },
+    {
+      "type": "FATHER",
+      "name": "father",
+      "count": 1061
+    },
+    {
+      "type": "AWARD",
+      "name": "award",
+      "count": 939
+    },
+    {
+      "type": "PLACE_OF_BIRTH",
+      "name": "place_of_birth",
+      "count": 903
+    },
+    {
+      "type": "MOTHER",
+      "name": "mother",
+      "count": 761
+    },
+    {
+      "type": "END_DATE",
+      "name": "end_date",
+      "count": 745
+    },
+    {
+      "type": "COLLABORATED_WITH",
+      "name": "collaborated_with",
+      "count": 580
+    },
+    {
+      "type": "SIBLING",
+      "name": "sibling",
+      "count": 571
+    },
+    {
+      "type": "PLACE_OF_DEATH",
+      "name": "place_of_death",
+      "count": 547
+    },
+    {
+      "type": "PRODUCER",
+      "name": "producer",
+      "count": 514
+    },
+    {
+      "type": "PART_OF",
+      "name": "part_of",
+      "count": 501
+    },
+    {
+      "type": "FOUNDED",
+      "name": "founded",
+      "count": 459
+    },
+    {
+      "type": "PARTICIPATED_IN",
+      "name": "participated_in",
+      "count": 407
+    },
+    {
+      "type": "PARENT",
+      "name": "parent",
+      "count": 390
+    },
+    {
+      "type": "SUCCESSOR",
+      "name": "successor",
+      "count": 371
+    },
+    {
+      "type": "EDUCATED_AT",
+      "name": "educated_at",
+      "count": 362
+    },
+    {
+      "type": "BASED_ON",
+      "name": "based_on",
+      "count": 352
+    },
+    {
+      "type": "EMPLOYER",
+      "name": "employer",
+      "count": 346
+    },
+    {
+      "type": "COUNTRY_OF_ORIGIN",
+      "name": "country_of_origin",
+      "count": 334
+    },
+    {
+      "type": "NOMINATION",
+      "name": "nomination",
+      "count": 260
+    },
+    {
+      "type": "MARRIAGE_DATE",
+      "name": "marriage_date",
+      "count": 246
+    },
+    {
+      "type": "COMPOSER",
+      "name": "composer",
+      "count": 217
+    },
+    {
+      "type": "DISTRIBUTOR",
+      "name": "distributor",
+      "count": 209
+    },
+    {
+      "type": "SUBJECT",
+      "name": "subject",
+      "count": 198
+    },
+    {
+      "type": "CHART_POSITION",
+      "name": "chart_position",
+      "count": 191
+    },
+    {
+      "type": "GRANDPARENT",
+      "name": "grandparent",
+      "count": 187
+    },
+    {
+      "type": "LANGUAGE",
+      "name": "language",
+      "count": 173
+    },
+    {
+      "type": "GENRE",
+      "name": "genre",
+      "count": 166
+    },
+    {
+      "type": "INFLUENCED_BY",
+      "name": "influenced_by",
+      "count": 163
+    },
+    {
+      "type": "LIFESPAN",
+      "name": "lifespan",
+      "count": 157
+    },
+    {
+      "type": "ALSO_KNOWN_AS",
+      "name": "also_known_as",
+      "count": 146
+    },
+    {
+      "type": "SETTING",
+      "name": "setting",
+      "count": 116
+    },
+    {
+      "type": "PUBLISHER",
+      "name": "publisher",
+      "count": 107
+    },
+    {
+      "type": "SEQUEL_TO",
+      "name": "sequel_to",
+      "count": 104
+    },
+    {
+      "type": "CAUSE_OF_DEATH",
+      "name": "cause_of_death",
+      "count": 94
+    },
+    {
+      "type": "PREDECESSOR",
+      "name": "predecessor",
+      "count": 85
+    },
+    {
+      "type": "PRODUCTION_COMPANY",
+      "name": "production_company",
+      "count": 84
+    },
+    {
+      "type": "UNCLE",
+      "name": "uncle",
+      "count": 81
+    },
+    {
+      "type": "NAMED_AFTER",
+      "name": "named_after",
+      "count": 78
+    },
+    {
+      "type": "GRANDCHILD",
+      "name": "grandchild",
+      "count": 77
+    },
+    {
+      "type": "ART_DIRECTOR",
+      "name": "art_director",
+      "count": 71
+    },
+    {
+      "type": "OWNER",
+      "name": "owner",
+      "count": 67
+    },
+    {
+      "type": "LEAGUE",
+      "name": "league",
+      "count": 62
+    },
+    {
+      "type": "ABBREVIATION",
+      "name": "abbreviation",
+      "count": 55
+    },
+    {
+      "type": "DYNASTY",
+      "name": "dynasty",
+      "count": 53
+    },
+    {
+      "type": "RECORDED",
+      "name": "recorded",
+      "count": 44
+    },
+    {
+      "type": "BIRTH_NAME",
+      "name": "birth_name",
+      "count": 4
+    },
+    {
+      "type": "FULL_NAME",
+      "name": "full_name",
+      "count": 3
+    },
+    {
+      "type": "VALUE",
+      "name": "value",
+      "count": 3
+    },
+    {
+      "type": "DATE_ADDED",
+      "name": "date_added",
+      "count": 2
+    },
+    {
+      "type": "CRITICAL_RECEPTION",
+      "name": "critical_reception",
+      "count": 1
+    },
+    {
+      "type": "MENTIONED_IN",
+      "name": "mentioned_in",
+      "count": 1
+    }
+  ]
+}

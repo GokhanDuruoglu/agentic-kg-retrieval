@@ -1,0 +1,5 @@
+# Dense retrieval: multilingual E5 embeddings + exact cosine search, top-20 into one answer call.
+kind: retrieval
+top_k: 20
+retriever: {type: dense, model: intfloat/multilingual-e5-large, revision: 3d7cfbdacd47fdda877c5cd8a79fbcc4f2a574f3}
+context: {type: passages, max_tokens: 128000}

@@ -1,0 +1,4 @@
+# validated + chained sub-questions: more, simpler sub-questions labeled [independent] / [dependentN]; dependent
+# ones run in order and receive the earlier results, independent ones run in parallel. No tools.
+extends: validated
+decomposer: {type: chain}

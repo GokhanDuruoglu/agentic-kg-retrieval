@@ -1,0 +1,3 @@
+# validated-tool + chained sub-questions (5 generic tools).
+extends: validated-tool
+decomposer: {type: chain}

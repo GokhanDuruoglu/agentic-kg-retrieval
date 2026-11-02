@@ -1,0 +1,4 @@
+# validated with 10 tools: the 5 generic + attribute_of_entity, relation_chain, compare_attribute,
+# entities_with_relation_to, kin_of.
+extends: validated
+tools: {preset: extended10, descriptions: concise}

@@ -1,0 +1,15 @@
+# Request parameters and pipeline settings shared by every method.
+# The `seed` of the decision / query / answer roles is base_seed + repeat; the judge always uses base_seed.
+base_seed: 1000
+repeats: 3
+
+decision_llm: {temperature: 0.3,  top_k: 5, max_retries: 2, request_timeout: 240, max_tokens: 32768, user: "akg-decision", prompt_cache_max_len: 8192}
+query_llm:    {temperature: 0.01,           max_retries: 2, request_timeout: 240, max_tokens: 32768, user: "akg-query",    prompt_cache_max_len: 8192}
+answer_llm:   {temperature: 0.2,            max_retries: 2, request_timeout: 240, max_tokens: 32768, user: "akg-answer",   prompt_cache_max_len: 8192}
+judge_llm:    {temperature: 0.01,           max_retries: 2, request_timeout: 240, max_tokens: 16384, user: "akg-judge",    prompt_cache_max_len: 8192}
+
+pipeline:
+  max_workers: 4                # parallel sub-questions / chains per question
+  max_rows_per_query: 0         # 0 = never truncate result rows
+neo4j:
+  query_timeout_sec: 120

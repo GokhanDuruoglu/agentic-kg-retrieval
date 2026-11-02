@@ -1,0 +1,4 @@
+# non-validated + validator: a query that errors or returns 0 rows is regenerated (max 3 attempts) with the
+# failed attempts in the prompt.
+extends: non-validated
+validator: {type: retry, max_attempts: 3}

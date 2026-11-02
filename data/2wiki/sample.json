@@ -1,0 +1,6 @@
+{
+  "benchmark": "2wiki",
+  "split": "validation",
+  "seed": 1881235750,
+  "sample": 1000
+}

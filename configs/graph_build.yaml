@@ -1,0 +1,34 @@
+# Knowledge-graph construction (akg graph build). Models are Fireworks model names (prefix and endpoint come from
+# configs/models.yaml). The sampling parameters of the original June 2026 build were not recorded; they are set
+# explicitly here (temperature 0), so a fresh LLM run is not byte-identical to the shipped graph. Rebuilding
+# from the shipped caches (--from-cache) makes no LLM call.
+sample:
+  hf_dataset: xanhho/2WikiMultihopQA
+  hf_revision: e37a4050605363be62f1d02e6eb888fe5f56530e
+  split: validation
+  size: 1000
+  seed: 1881235750
+
+openie:                      # structured extraction of entities + triples, one call per passage
+  model: gpt-oss-120b
+  batch_size: 1
+  workers: 8
+  params: {temperature: 0.0, max_retries: 5, request_timeout: 240, max_tokens: 32768}
+
+resolve:                     # entity resolution: E5 near-duplicate merge within the same type
+  cosine_threshold: 0.92
+  use_embeddings: true
+
+triple_judge:                # LLM audit of the extracted triples against their passage (drop / fix only)
+  model: kimi-k2p6
+  batch_size: 6
+  workers: 8
+  params: {temperature: 0.0, max_retries: 5, request_timeout: 240, max_tokens: 32768}
+
+consolidate:                 # relation vocabulary -> 67 canonical relation types
+  model: kimi-k2p6
+  vocab_size: 200
+  target: 80
+  chunk: 120
+  workers: 4
+  params: {temperature: 0.0, max_retries: 5, request_timeout: 240, max_tokens: 32768}

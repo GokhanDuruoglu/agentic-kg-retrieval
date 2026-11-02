@@ -1,0 +1,3 @@
+# The same 10 tools with long "returns / does NOT return / when not to call" descriptions.
+extends: validated-10tools
+tools: {descriptions: guided}

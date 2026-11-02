@@ -1,0 +1,17 @@
+# A local Neo4j for the 2Wiki graph: `docker compose up -d`, then `akg graph load --clean`.
+# Community edition has a single database called "neo4j" -> NEO4J_DATABASE=neo4j in .env.
+# APOC is needed by the graph loader (apoc.merge.relationship); the paper graph was loaded on Neo4j 5.26.
+services:
+  neo4j:
+    image: neo4j:5.26.0-community
+    ports:
+      - "7474:7474"   # browser
+      - "7687:7687"   # bolt
+    environment:
+      NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-change-me-please}
+      NEO4J_PLUGINS: '["apoc"]'
+      NEO4J_server_memory_heap_max__size: 4G
+    volumes:
+      - neo4j-data:/data
+volumes:
+  neo4j-data:

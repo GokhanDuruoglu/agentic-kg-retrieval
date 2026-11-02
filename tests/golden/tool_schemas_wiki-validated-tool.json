@@ -1,0 +1,106 @@
+[
+ {
+  "type": "function",
+  "function": {
+   "name": "neighbors",
+   "description": "Entities within `hops` (1-3) of ONE named entity, with the relation type of each direct neighbor.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "hops": {
+      "type": "integer"
+     }
+    },
+    "required": [
+     "name"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "passages_for_entity",
+   "description": "Raw source passage text mentioning ONE named entity.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "name"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "relation_between",
+   "description": "Direct (1-hop) relation(s) between TWO named entities, either direction.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "subject": {
+      "type": "string"
+     },
+     "object": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "subject",
+     "object"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "shortest_path_between",
+   "description": "Shortest relation path between TWO named entities, via any intermediates.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "subject": {
+      "type": "string"
+     },
+     "object": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "subject",
+     "object"
+    ]
+   }
+  }
+ },
+ {
+  "type": "function",
+  "function": {
+   "name": "triples_with_relation",
+   "description": "All (subject, relation, object) triples for ONE relation type, optionally restricted to a subject.",
+   "parameters": {
+    "type": "object",
+    "properties": {
+     "relation": {
+      "type": "string"
+     },
+     "subject": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "relation"
+    ]
+   }
+  }
+ }
+]

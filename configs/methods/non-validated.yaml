@@ -1,0 +1,6 @@
+# graph-dt-gpt + splitting: evidence over 128k tokens is chunked, each chunk answered, a combiner merges the partials.
+extends: graph-dt-gpt
+answerer:
+  type: chunked
+  max_prompt_tokens: 128000
+  combiner: {type: llm}

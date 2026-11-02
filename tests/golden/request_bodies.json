@@ -1,0 +1,293 @@
+{
+ "decision": {
+  "cfg": {
+   "temperature": 0.3,
+   "top_k": 5,
+   "max_retries": 2,
+   "request_timeout": 240,
+   "max_tokens": 32768,
+   "user": "akg-decision",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "high",
+   "seed": 1001
+  },
+  "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+  "body": {
+   "messages": [
+    {
+     "role": "system",
+     "content": "SYS"
+    },
+    {
+     "role": "user",
+     "content": "USER"
+    }
+   ],
+   "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+   "stream": false,
+   "n": 1,
+   "stop": null,
+   "top_k": 5,
+   "user": "akg-decision",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "high",
+   "seed": 1001,
+   "temperature": 0.3,
+   "max_tokens": 32768
+  }
+ },
+ "query": {
+  "cfg": {
+   "temperature": 0.01,
+   "max_retries": 2,
+   "request_timeout": 240,
+   "max_tokens": 32768,
+   "user": "akg-query",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "high",
+   "seed": 1001
+  },
+  "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+  "body": {
+   "messages": [
+    {
+     "role": "system",
+     "content": "SYS"
+    },
+    {
+     "role": "user",
+     "content": "USER"
+    }
+   ],
+   "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+   "stream": false,
+   "n": 1,
+   "stop": null,
+   "user": "akg-query",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "high",
+   "seed": 1001,
+   "temperature": 0.01,
+   "max_tokens": 32768
+  },
+  "body_tools": {
+   "messages": [
+    {
+     "role": "system",
+     "content": "SYS"
+    },
+    {
+     "role": "user",
+     "content": "USER"
+    }
+   ],
+   "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+   "stream": false,
+   "n": 1,
+   "stop": null,
+   "user": "akg-query",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "high",
+   "seed": 1001,
+   "temperature": 0.01,
+   "max_tokens": 32768,
+   "tools": [
+    {
+     "type": "function",
+     "function": {
+      "name": "neighbors",
+      "description": "Entities within `hops` (1-3) of ONE named entity, with the relation type of each direct neighbor.",
+      "parameters": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string"
+        },
+        "hops": {
+         "type": "integer"
+        }
+       },
+       "required": [
+        "name"
+       ]
+      }
+     }
+    },
+    {
+     "type": "function",
+     "function": {
+      "name": "passages_for_entity",
+      "description": "Raw source passage text mentioning ONE named entity.",
+      "parameters": {
+       "type": "object",
+       "properties": {
+        "name": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "name"
+       ]
+      }
+     }
+    },
+    {
+     "type": "function",
+     "function": {
+      "name": "relation_between",
+      "description": "Direct (1-hop) relation(s) between TWO named entities, either direction.",
+      "parameters": {
+       "type": "object",
+       "properties": {
+        "subject": {
+         "type": "string"
+        },
+        "object": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "subject",
+        "object"
+       ]
+      }
+     }
+    },
+    {
+     "type": "function",
+     "function": {
+      "name": "shortest_path_between",
+      "description": "Shortest relation path between TWO named entities, via any intermediates.",
+      "parameters": {
+       "type": "object",
+       "properties": {
+        "subject": {
+         "type": "string"
+        },
+        "object": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "subject",
+        "object"
+       ]
+      }
+     }
+    },
+    {
+     "type": "function",
+     "function": {
+      "name": "triples_with_relation",
+      "description": "All (subject, relation, object) triples for ONE relation type, optionally restricted to a subject.",
+      "parameters": {
+       "type": "object",
+       "properties": {
+        "relation": {
+         "type": "string"
+        },
+        "subject": {
+         "type": "string"
+        }
+       },
+       "required": [
+        "relation"
+       ]
+      }
+     }
+    }
+   ]
+  }
+ },
+ "answer": {
+  "cfg": {
+   "temperature": 0.2,
+   "max_retries": 2,
+   "request_timeout": 240,
+   "max_tokens": 32768,
+   "user": "akg-answer",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "low",
+   "seed": 1001
+  },
+  "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+  "body": {
+   "messages": [
+    {
+     "role": "system",
+     "content": "SYS"
+    },
+    {
+     "role": "user",
+     "content": "USER"
+    }
+   ],
+   "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+   "stream": false,
+   "n": 1,
+   "stop": null,
+   "user": "akg-answer",
+   "prompt_cache_max_len": 8192,
+   "thinking": {
+    "type": "enabled"
+   },
+   "reasoning_effort": "low",
+   "seed": 1001,
+   "temperature": 0.2,
+   "max_tokens": 32768
+  }
+ },
+ "judge": {
+  "cfg": {
+   "temperature": 0.01,
+   "max_retries": 2,
+   "request_timeout": 240,
+   "max_tokens": 16384,
+   "user": "akg-judge",
+   "prompt_cache_max_len": 8192,
+   "reasoning_effort": "low",
+   "seed": 1000
+  },
+  "model": "accounts/fireworks/models/glm-5p3",
+  "body": {
+   "messages": [
+    {
+     "role": "system",
+     "content": "SYS"
+    },
+    {
+     "role": "user",
+     "content": "USER"
+    }
+   ],
+   "model": "accounts/fireworks/models/glm-5p3",
+   "stream": false,
+   "n": 1,
+   "stop": null,
+   "user": "akg-judge",
+   "prompt_cache_max_len": 8192,
+   "reasoning_effort": "low",
+   "seed": 1000,
+   "temperature": 0.01,
+   "max_tokens": 16384
+  }
+ }
+}

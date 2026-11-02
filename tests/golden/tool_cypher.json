@@ -1,0 +1,1544 @@
+[
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Conrad I, Count of Oldenburg",
+   "hops": 2
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..2]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Conrad I, Count of Oldenburg"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Behind The Green Lights"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Behind The Green Lights"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Khud-Daar"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Khud-Daar"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "This Year's Blonde"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "This Year's Blonde"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Leszek the White",
+   "hops": 2
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..2]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Leszek the White"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Taxi!"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Taxi!"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "What Price Hollywood?"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "What Price Hollywood?"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Make The World Move",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Make The World Move"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "45 Fathers",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "45 Fathers"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "The Intended"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "The Intended"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "The Third Kiss",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "The Third Kiss"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Everything'S On Ice"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Everything'S On Ice"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Murderer In The Fog"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Murderer In The Fog"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Wish I Was Here"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Wish I Was Here"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "The Jack-Knife Man"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "The Jack-Knife Man"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Edsel Ford II",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Edsel Ford II"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "A Place Of Rage",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "A Place Of Rage"
+  }
+ },
+ {
+  "tool": "passages_for_entity",
+  "args": {
+   "name": "Meek Mill"
+  },
+  "cypher": "\n    MATCH (e:Entity)-[:MENTIONED_IN]->(p:Passage)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    RETURN DISTINCT p.title AS title, p.text AS text\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Meek Mill"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Eleonore Sophie of Saxe-Weimar",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Eleonore Sophie of Saxe-Weimar"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "PUBLICATION_DATE",
+   "subject": "Kuch Kuch Hota Hai"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "PUBLICATION_DATE",
+   "subject": "Kuch Kuch Hota Hai"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Jovelian De Koker",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Jovelian De Koker"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "The Rise And Rise Of Michael Rimmer",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "The Rise And Rise Of Michael Rimmer"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Gertrude Mary Woodward",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Gertrude Mary Woodward"
+  }
+ },
+ {
+  "tool": "triples_with_relation",
+  "args": {
+   "relation": "DIRECTOR",
+   "subject": "Glen And Randa"
+  },
+  "cypher": "\n    MATCH (a:Entity)-[r]->(b:Entity)\n    WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' '))\n      AND ($subject IS NULL\n           OR toLower(a.name) CONTAINS toLower($subject)\n           OR ANY(alias IN a.aliases WHERE toLower(alias) CONTAINS toLower($subject)))\n    RETURN a.name AS subject, type(r) AS relation, b.name AS object,\n           r.passage_id AS passage_id\n    LIMIT 100\n    ",
+  "params": {
+   "relation": "DIRECTOR",
+   "subject": "Glen And Randa"
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "The Maker",
+   "relation": "COUNTRY_OF_ORIGIN"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "The Maker",
+   "relation": "COUNTRY_OF_ORIGIN",
+   "fallback_types": [
+    "Location"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Never Gone",
+   "relation": "COUNTRY_OF_ORIGIN"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Never Gone",
+   "relation": "COUNTRY_OF_ORIGIN",
+   "fallback_types": [
+    "Location"
+   ]
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Oh! This Bavaria!",
+   "relation1": "DIRECTOR",
+   "relation2": "PLACE_OF_DEATH"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Oh! This Bavaria!",
+   "relation1": "DIRECTOR",
+   "relation2": "PLACE_OF_DEATH"
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "I Married A Monster From Outer Space",
+   "relation": "DIRECTOR"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "I Married A Monster From Outer Space",
+   "relation": "DIRECTOR",
+   "fallback_types": []
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "T-Men",
+   "relation": "DIRECTOR"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "T-Men",
+   "relation": "DIRECTOR",
+   "fallback_types": []
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Old Loves And New",
+   "entity2": "Kill Me Tomorrow",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Old Loves And New",
+    "Kill Me Tomorrow"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Moonstruck",
+   "entity2": "One Step To Eternity",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Moonstruck",
+    "One Step To Eternity"
+   ],
+   "relation": "PUBLICATION_DATE",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Peruchazhi",
+   "entity2": "The Convict From Istanbul",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Peruchazhi",
+    "The Convict From Istanbul"
+   ],
+   "relation": "PUBLICATION_DATE",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "The Borrower",
+   "entity2": "Sheba, Baby",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "The Borrower",
+    "Sheba, Baby"
+   ],
+   "relation": "PUBLICATION_DATE",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Beneath The 12-Mile Reef",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Beneath The 12-Mile Reef",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Jawani Phir Nahi Ani",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Jawani Phir Nahi Ani",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "V&S Group",
+   "relation": "LOCATION"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "V&S Group",
+   "relation": "LOCATION",
+   "fallback_types": [
+    "Location"
+   ]
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Prince Albert of Prussia",
+   "relation1": "FATHER",
+   "relation2": "MOTHER"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Prince Albert of Prussia",
+   "relation1": "FATHER",
+   "relation2": "MOTHER"
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "John Heriot's Wife",
+   "relation": "DIRECTOR"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "John Heriot's Wife",
+   "relation": "DIRECTOR",
+   "fallback_types": []
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "The Marriage of Kitty",
+   "relation": "DIRECTOR"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "The Marriage of Kitty",
+   "relation": "DIRECTOR",
+   "fallback_types": []
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Wherever I Lay My Hat (That'S My Home)",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Wherever I Lay My Hat (That'S My Home)",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Don'T Ya",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Don'T Ya",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Betty Radice",
+   "relation": "DATE_OF_DEATH"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Betty Radice",
+   "relation": "DATE_OF_DEATH",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Mike Bucchianeri",
+   "relation": "DATE_OF_DEATH"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Mike Bucchianeri",
+   "relation": "DATE_OF_DEATH",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "The Calcium Kid",
+   "entity2": "Let'S Not Keep In Touch",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "The Calcium Kid",
+    "Let'S Not Keep In Touch"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Pirates Of The Prairie",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Pirates Of The Prairie",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Alien Origin",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Alien Origin",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "This Year's Blonde",
+   "entity2": "Something Like Love",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "This Year's Blonde",
+    "Something Like Love"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Paul De Scherff",
+   "entity2": "Lyudmyla Olyanovska",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Paul De Scherff",
+    "Lyudmyla Olyanovska"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "The Rawhide Terror",
+   "relation1": "DIRECTOR",
+   "relation2": "PLACE_OF_BIRTH"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "The Rawhide Terror",
+   "relation1": "DIRECTOR",
+   "relation2": "PLACE_OF_BIRTH"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Anke Fuchs",
+   "entity2": "Anders Lundqvist",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Anke Fuchs",
+    "Anders Lundqvist"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Jovelian De Koker",
+   "entity2": "Antonio Álvarez Alonso",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Jovelian De Koker",
+    "Antonio Álvarez Alonso"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Kristine Bjørdal Leine",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Kristine Bjørdal Leine",
+   "relation": "DATE_OF_BIRTH",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Garrett Williamson",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Garrett Williamson",
+   "relation": "DATE_OF_BIRTH",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Devil In The Flesh 2",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Devil In The Flesh 2",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Las Tecnologías Pesqueras",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Las Tecnologías Pesqueras",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Il Coraggio",
+   "entity2": "Shark Monroe",
+   "relation": "DATE_OF_DEATH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Il Coraggio",
+    "Shark Monroe"
+   ],
+   "relation": "DATE_OF_DEATH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Shari Roman",
+   "entity2": "Stately Wayne Manor",
+   "relation": "NATIONALITY"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Shari Roman",
+    "Stately Wayne Manor"
+   ],
+   "relation": "NATIONALITY",
+   "via_relation": null,
+   "fallback_types": [
+    "Location"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Silver Skates",
+   "entity2": "Ginevra Degli Almieri",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Silver Skates",
+    "Ginevra Degli Almieri"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "The Rise And Rise Of Michael Rimmer",
+   "entity2": "Bar 51",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "The Rise And Rise Of Michael Rimmer",
+    "Bar 51"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "The Answers",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "The Answers",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "The Experimental Guitar Series Volume 1: The Guitar As Orchestra",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "The Experimental Guitar Series Volume 1: The Guitar As Orchestra",
+   "relation": "PUBLICATION_DATE",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Raging Bull",
+   "relation1": "DIRECTOR",
+   "relation2": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Raging Bull",
+   "relation1": "DIRECTOR",
+   "relation2": "DATE_OF_BIRTH"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Glen And Randa",
+   "relation1": "DIRECTOR",
+   "relation2": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Glen And Randa",
+   "relation1": "DIRECTOR",
+   "relation2": "DATE_OF_BIRTH"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Oh! This Bavaria!",
+   "relation1": "director",
+   "relation2": "place of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Oh! This Bavaria!",
+   "relation1": "director",
+   "relation2": "place of death"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "I Married A Monster From Outer Space",
+   "relation1": "director",
+   "relation2": "date of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "I Married A Monster From Outer Space",
+   "relation1": "director",
+   "relation2": "date of death"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "T-Men",
+   "relation1": "director",
+   "relation2": "date of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "T-Men",
+   "relation1": "director",
+   "relation2": "date of death"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "I Married A Monster From Outer Space",
+   "entity2": "T-Men",
+   "relation": "DATE_OF_DEATH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "I Married A Monster From Outer Space",
+    "T-Men"
+   ],
+   "relation": "DATE_OF_DEATH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Girl In The Headlines",
+   "relation1": "director",
+   "relation2": "place of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Girl In The Headlines",
+   "relation1": "director",
+   "relation2": "place of death"
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Lake Peigneur",
+   "relation": "country"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Lake Peigneur",
+   "relation": "country",
+   "fallback_types": [
+    "Location"
+   ]
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Jiang Rong",
+   "relation1": "spouse",
+   "relation2": "place of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Jiang Rong",
+   "relation1": "spouse",
+   "relation2": "place of birth"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Beneath The 12-Mile Reef",
+   "entity2": "Jawani Phir Nahi Ani",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Beneath The 12-Mile Reef",
+    "Jawani Phir Nahi Ani"
+   ],
+   "relation": "PUBLICATION_DATE",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Milarepa",
+   "relation1": "director",
+   "relation2": "place of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Milarepa",
+   "relation1": "director",
+   "relation2": "place of birth"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "The Parson And The Outlaw",
+   "entity2": "The Black Marble",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "The Parson And The Outlaw",
+    "The Black Marble"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Jacob Van Huysum",
+   "relation1": "father",
+   "relation2": "date of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Jacob Van Huysum",
+   "relation1": "father",
+   "relation2": "date of death"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Prince Albert of Prussia",
+   "hops": 2
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..2]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Prince Albert of Prussia"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "John Heriot's Wife",
+   "entity2": "The Marriage Of Kitty",
+   "relation": "DATE_OF_DEATH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "John Heriot's Wife",
+    "The Marriage Of Kitty"
+   ],
+   "relation": "DATE_OF_DEATH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Wherever I Lay My Hat (That'S My Home)",
+   "entity2": "Don'T Ya",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Wherever I Lay My Hat (That'S My Home)",
+    "Don'T Ya"
+   ],
+   "relation": "PUBLICATION_DATE",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Nightmare Cinema",
+   "relation1": "director",
+   "relation2": "place of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Nightmare Cinema",
+   "relation1": "director",
+   "relation2": "place of birth"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "The Calcium Kid",
+   "relation1": "director",
+   "relation2": "date of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "The Calcium Kid",
+   "relation1": "director",
+   "relation2": "date of birth"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Let'S Not Keep In Touch",
+   "relation1": "director",
+   "relation2": "date of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Let'S Not Keep In Touch",
+   "relation1": "director",
+   "relation2": "date of birth"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Pirates Of The Prairie",
+   "entity2": "Alien Origin",
+   "relation": "PUBLICATION_DATE"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Pirates Of The Prairie",
+    "Alien Origin"
+   ],
+   "relation": "PUBLICATION_DATE",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "This Year'S Blonde",
+   "entity2": "Something Like Love",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "This Year'S Blonde",
+    "Something Like Love"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "The Rawhide Terror",
+   "relation1": "director",
+   "relation2": "place of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "The Rawhide Terror",
+   "relation1": "director",
+   "relation2": "place of birth"
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Jovelian De Koker",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Jovelian De Koker",
+   "relation": "DATE_OF_BIRTH",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Antonio Álvarez Alonso",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Antonio Álvarez Alonso",
+   "relation": "DATE_OF_BIRTH",
+   "fallback_types": [
+    "Date"
+   ]
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "Kristine Bjørdal Leine",
+   "entity2": "Garrett Williamson",
+   "relation": "DATE_OF_BIRTH"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        CALL {\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH e\n            MATCH (e)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (e)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.relation AS relation, x.value AS value,\n               x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "Kristine Bjørdal Leine",
+    "Garrett Williamson"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": null,
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Il Coraggio",
+   "relation1": "director",
+   "relation2": "date of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Il Coraggio",
+   "relation1": "director",
+   "relation2": "date of death"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Shark Monroe",
+   "relation1": "director",
+   "relation2": "date of death"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Shark Monroe",
+   "relation1": "director",
+   "relation2": "date of death"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Missing Witnesses",
+   "relation1": "director",
+   "relation2": "place of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Missing Witnesses",
+   "relation1": "director",
+   "relation2": "place of birth"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "The Last Company",
+   "entity2": "Anand Ashram",
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "The Last Company",
+    "Anand Ashram"
+   ],
+   "relation": "DATE_OF_BIRTH",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Date"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Silver Skates",
+   "relation": "director"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Silver Skates",
+   "relation": "director",
+   "fallback_types": []
+  }
+ },
+ {
+  "tool": "attribute_of_entity",
+  "args": {
+   "name": "Ginevra Degli Almieri",
+   "relation": "DIRECTOR"
+  },
+  "cypher": "\n    CALL {\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n        MATCH (e)-[r]-(v:Entity)\n        WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n        UNION\n        MATCH (e:Entity)\n        WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n          AND NOT EXISTS { MATCH (e)-[r0]-(:Entity) WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n        MATCH (e)-[r]-(v:Entity)\n        WHERE type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> e\n        RETURN e.name AS entity, type(r) AS relation, v.name AS value, v.type AS value_type,\n               startNode(r) = e AS entity_is_subject, r.passage_id AS passage_id\n    }\n    RETURN entity, relation, value, value_type, entity_is_subject, passage_id\n    LIMIT 25\n    ",
+  "params": {
+   "name": "Ginevra Degli Almieri",
+   "relation": "DIRECTOR",
+   "fallback_types": []
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Silver Skates",
+   "relation1": "director",
+   "relation2": "date of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Silver Skates",
+   "relation1": "director",
+   "relation2": "date of birth"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Ginevra Degli Almieri",
+   "relation1": "director",
+   "relation2": "date of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Ginevra Degli Almieri",
+   "relation1": "director",
+   "relation2": "date of birth"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Paul Foley",
+   "hops": 2
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..2]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Paul Foley"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Rudolf of Żagań",
+   "hops": 2
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..2]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Rudolf of Żagań"
+  }
+ },
+ {
+  "tool": "compare_attribute",
+  "args": {
+   "entity1": "A Summer'S Tale",
+   "entity2": "Promise At Dawn",
+   "relation": "NATIONALITY",
+   "via_relation": "DIRECTOR"
+  },
+  "cypher": "\n        UNWIND $entities AS asked\n        MATCH (e:Entity)\n        WHERE toLower(e.name) CONTAINS toLower(asked)\n           OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower(asked))\n        MATCH (e)-[r0]-(mid:Entity)\n        WHERE toLower(replace(type(r0), '_', ' ')) CONTAINS toLower(replace($via_relation, '_', ' ')) AND mid <> e\n        CALL {\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE toLower(replace(type(r), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n            UNION\n            WITH mid, e\n            MATCH (mid)-[r]-(v:Entity)\n            WHERE NOT EXISTS { MATCH (mid)-[r2]-(:Entity) WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation, '_', ' ')) }\n              AND type(r) = 'RELATED_TO' AND v.type IN $fallback_types AND v <> mid AND v <> e\n            RETURN type(r) AS relation, v.name AS value, v.type AS value_type\n        }\n        WITH asked, collect({entity: e.name, via: mid.name, relation: relation, value: value,\n                              value_type: value_type}) AS vals\n        WITH collect({asked: asked, vals: vals}) AS groups\n        WHERE size(groups) = $n_needed\n        UNWIND groups AS g\n        UNWIND g.vals AS x\n        RETURN g.asked AS asked, x.entity AS entity, x.via AS via, x.relation AS relation,\n               x.value AS value, x.value_type AS value_type\n        LIMIT 60\n        ",
+  "params": {
+   "entities": [
+    "A Summer'S Tale",
+    "Promise At Dawn"
+   ],
+   "relation": "NATIONALITY",
+   "via_relation": "DIRECTOR",
+   "fallback_types": [
+    "Location"
+   ],
+   "n_needed": 2
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Raging Bull",
+   "relation1": "director",
+   "relation2": "date of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Raging Bull",
+   "relation1": "director",
+   "relation2": "date of birth"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Glen And Randa",
+   "relation1": "director",
+   "relation2": "date of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Glen And Randa",
+   "relation1": "director",
+   "relation2": "date of birth"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Sharon Marley",
+   "relation1": "mother",
+   "relation2": "nationality"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Sharon Marley",
+   "relation1": "mother",
+   "relation2": "nationality"
+  }
+ },
+ {
+  "tool": "relation_chain",
+  "args": {
+   "name": "Annette De La Renta",
+   "relation1": "spouse",
+   "relation2": "place of birth"
+  },
+  "cypher": "\n    MATCH (x:Entity)\n    WHERE (toLower(x.name) CONTAINS toLower($name) OR ANY(alias IN x.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (x)-[r1]-(mid:Entity)\n    WHERE toLower(replace(type(r1), '_', ' ')) CONTAINS toLower(replace($relation1, '_', ' ')) AND mid <> x\n    MATCH (mid)-[r2]-(ans:Entity)\n    WHERE toLower(replace(type(r2), '_', ' ')) CONTAINS toLower(replace($relation2, '_', ' ')) AND ans <> mid AND ans <> x\n    RETURN DISTINCT x.name AS entity, type(r1) AS relation1, mid.name AS via,\n           type(r2) AS relation2, ans.name AS answer, ans.type AS answer_type\n    LIMIT 50\n    ",
+  "params": {
+   "name": "Annette De La Renta",
+   "relation1": "spouse",
+   "relation2": "place of birth"
+  }
+ },
+ {
+  "tool": "neighbors",
+  "args": {
+   "name": "Bakaffa",
+   "hops": 1
+  },
+  "cypher": "\n    MATCH (e:Entity)\n    WHERE (toLower(e.name) CONTAINS toLower($name) OR ANY(alias IN e.aliases WHERE toLower(alias) CONTAINS toLower($name)))\n    MATCH (e)-[r]-(n1:Entity)\n    OPTIONAL MATCH path = (e)-[*1..1]-(reached:Entity)\n    WHERE all(n IN nodes(path) WHERE n:Entity)\n    WITH e, collect(DISTINCT {relation: type(r), neighbor: n1.name}) AS direct,\n         collect(DISTINCT reached.name) AS reachable\n    RETURN e.name AS seed, e.type AS type, direct, reachable[..100] AS reachable\n    LIMIT 10\n    ",
+  "params": {
+   "name": "Bakaffa"
+  }
+ }
+]

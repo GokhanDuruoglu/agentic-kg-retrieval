@@ -1,0 +1,30 @@
+# Model per role, endpoint, per-role request extras and list prices (USD per 1M tokens).
+# The endpoint only has to speak the OpenAI chat-completions protocol (with tool calling).
+# Fireworks is the default; override base_url here or with LLM_BASE_URL in .env.
+base_url: "https://api.fireworks.ai/inference/v1"
+api_key_env: FIREWORKS_API_KEY
+model_prefix: "accounts/fireworks/models/"
+
+roles:
+  decision:
+    model: deepseek-v4p1-flash
+    context_window: 1048576
+    extra_kwargs: {thinking: {type: enabled}, reasoning_effort: high}
+  query:
+    model: deepseek-v4p1-flash
+    context_window: 1048576
+    extra_kwargs: {thinking: {type: enabled}, reasoning_effort: high}
+  answer:                       # also answers the retrieval baselines and writes GraphRAG community reports
+    model: deepseek-v4p1-flash
+    context_window: 1048576
+    extra_kwargs: {thinking: {type: enabled}, reasoning_effort: low}
+  judge:                        # must differ from every pipeline model
+    model: glm-5p3
+    context_window: 1048576
+    extra_kwargs: {reasoning_effort: low}
+
+answer_output_headroom_tokens: 16000
+
+pricing:                        # Fireworks list prices; a model without an entry has USD = n/a
+  deepseek-v4p1-flash: {input: 0.30, cached_input: 0.006, output: 1.20}
+  glm-5p3:             {input: 1.40, cached_input: 0.26,  output: 4.40}

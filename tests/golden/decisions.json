@@ -1,0 +1,2103 @@
+[
+ {
+  "chain": false,
+  "question": "Are the movies Alfred Von Ingelheim'S Dramatic Life and A Summer You Will Never Forget, from the same country?",
+  "raw": "1. What is the country of origin of the movie Alfred Von Ingelheim's Dramatic Life?\n2. What is the country of origin of the movie A Summer You Will Never Forget?",
+  "sub_questions": [
+   "What is the country of origin of the movie Alfred Von Ingelheim's Dramatic Life?",
+   "What is the country of origin of the movie A Summer You Will Never Forget?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the performer of song Égérie (Song) born?",
+  "raw": "[\"Who is the performer of the song Égérie?\", \"Where was the performer of the song Égérie born?\"]",
+  "sub_questions": [
+   "Where was the performer of song Égérie (Song) born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where did Paulding Farnham's wife die?",
+  "raw": "Where did Paulding Farnham's wife die?",
+  "sub_questions": [
+   "Where did Paulding Farnham's wife die?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is Conrad I, Count Of Oldenburg's paternal grandmother?",
+  "raw": "Who is Conrad I, Count Of Oldenburg's paternal grandmother?",
+  "sub_questions": [
+   "Who is Conrad I, Count Of Oldenburg's paternal grandmother?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is the paternal grandmother of Eleonore Sophie Of Saxe-Weimar?",
+  "raw": "Who is the paternal grandmother of Eleonore Sophie Of Saxe-Weimar?",
+  "sub_questions": [
+   "Who is the paternal grandmother of Eleonore Sophie Of Saxe-Weimar?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is the paternal grandfather of Constance Of Sicily, Dogaressa Of Venice?",
+  "raw": "[\"Who is the paternal grandfather of Constance Of Sicily, Dogaressa Of Venice?\"]",
+  "sub_questions": [
+   "Who is the paternal grandfather of Constance Of Sicily, Dogaressa Of Venice?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who died later, Behind The Green Lights or Branded A Coward?",
+  "raw": "[\n  \"Who is the director of Behind The Green Lights?\",\n  \"Who is the director of Branded A Coward?\",\n  \"What is the date of death of the director of Behind The Green Lights?\",\n  \"What is the date of death of the director of Branded A Coward?\",\n  \"Which of these two directors died later?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who is the director of Behind The Green Lights?\",",
+   "\"Who is the director of Branded A Coward?\",",
+   "\"What is the date of death of the director of Behind The Green Lights?\",",
+   "\"What is the date of death of the director of Branded A Coward?\",",
+   "\"Which of these two directors died later?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the place of birth of the director of film I'M Not Mata Hari?",
+  "raw": "What is the place of birth of the director of film I'M Not Mata Hari?",
+  "sub_questions": [
+   "What is the place of birth of the director of film I'M Not Mata Hari?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the place of birth of Annette De La Renta's husband?",
+  "raw": "What is the place of birth of Annette De La Renta's husband?",
+  "sub_questions": [
+   "What is the place of birth of Annette De La Renta's husband?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director died first, Her Greatest Love or Beware Of Women?",
+  "raw": "[\n  \"What is the date of death of the director of Her Greatest Love?\",\n  \"What is the date of death of the director of Beware Of Women?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the date of death of the director of Her Greatest Love?\",",
+   "\"What is the date of death of the director of Beware Of Women?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who is older than the other, Old Loves And New or Kill Me Tomorrow? ",
+  "raw": "",
+  "sub_questions": [
+   "Which film has the director who is older than the other, Old Loves And New or Kill Me Tomorrow? "
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director died later, Darkened Rooms or Future Zone?",
+  "raw": "[\"Which film has the director died later, Darkened Rooms or Future Zone?\"]",
+  "sub_questions": [
+   "Which film has the director died later, Darkened Rooms or Future Zone?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who was born later, Aloha, Bobby And Rose or The Elusive Avengers?",
+  "raw": "Which film has the director who was born later, Aloha, Bobby And Rose or The Elusive Avengers?",
+  "sub_questions": [
+   "Which film has the director who was born later, Aloha, Bobby And Rose or The Elusive Avengers?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who was born earlier, Khud-Daar or Murderer In The Fog?",
+  "raw": "[\n  \"Who is the director of Khud-Daar?\",\n  \"Who is the director of Murderer In The Fog?\",\n  \"What is the date of birth of the director of Khud-Daar?\",\n  \"What is the date of birth of the director of Murderer In The Fog?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who is the director of Khud-Daar?\",",
+   "\"Who is the director of Murderer In The Fog?\",",
+   "\"What is the date of birth of the director of Khud-Daar?\",",
+   "\"What is the date of birth of the director of Murderer In The Fog?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film whose director was born first, 45 Fathers or The Intended?",
+  "raw": "[\"Which film whose director was born first, 45 Fathers or The Intended?\"]",
+  "sub_questions": [
+   "Which film whose director was born first, 45 Fathers or The Intended?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What nationality is Imperial Noble Consort Chunhui's husband?",
+  "raw": "[\"What nationality is Imperial Noble Consort Chunhui's husband?\"]",
+  "sub_questions": [
+   "What nationality is Imperial Noble Consort Chunhui's husband?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released earlier, Ek Ladka Ek Ladki or The Original Latin Kings Of Comedy?",
+  "raw": "[\n  \"What is the release date of Ek Ladka Ek Ladki?\",\n  \"What is the release date of The Original Latin Kings Of Comedy?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the release date of Ek Ladka Ek Ladki?\",",
+   "\"What is the release date of The Original Latin Kings Of Comedy?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the father of Princess Isabella Of Bavaria born?",
+  "raw": "[\"Where was the father of Princess Isabella Of Bavaria born?\"]",
+  "sub_questions": [
+   "Where was the father of Princess Isabella Of Bavaria born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who was born later, This Year'S Blonde or Something Like Love?",
+  "raw": "[\n  \"Who is the director of This Year's Blonde?\",\n  \"Who is the director of Something Like Love?\",\n  \"What is the date of birth of the director of This Year's Blonde?\",\n  \"What is the date of birth of the director of Something Like Love?\",\n  \"Which of those two directors was born later?\",\n  \"Which film has that director?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who is the director of This Year's Blonde?\",",
+   "\"Who is the director of Something Like Love?\",",
+   "\"What is the date of birth of the director of This Year's Blonde?\",",
+   "\"What is the date of birth of the director of Something Like Love?\",",
+   "\"Which of those two directors was born later?\",",
+   "\"Which film has that director?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which country Paul Foley (Ironmaster)'s father is from?",
+  "raw": "Which country Paul Foley (Ironmaster)'s father is from?",
+  "sub_questions": [
+   "Which country Paul Foley (Ironmaster)'s father is from?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film came out first, Peruchazhi or The Convict From Istanbul?",
+  "raw": "- What is the publication date of Peruchazhi?\n- What is the publication date of The Convict From Istanbul?",
+  "sub_questions": [
+   "What is the publication date of Peruchazhi?",
+   "What is the publication date of The Convict From Istanbul?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released more recently, Kuch Kuch Hota Hai or Kalakalappu 2?",
+  "raw": "- What is the release date of Kuch Kuch Hota Hai?\n- What is the release date of Kalakalappu 2?",
+  "sub_questions": [
+   "What is the release date of Kuch Kuch Hota Hai?",
+   "What is the release date of Kalakalappu 2?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is Henry I Of Cyprus's maternal grandmother?",
+  "raw": "Who is Henry I Of Cyprus's maternal grandmother?",
+  "sub_questions": [
+   "Who is Henry I Of Cyprus's maternal grandmother?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where did Leszek The White's father die?",
+  "raw": "Where did Leszek The White's father die?",
+  "sub_questions": [
+   "Where did Leszek The White's father die?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director born later, Charlie Chan In Honolulu or Lianna?",
+  "raw": "- What is the date of birth of the director of Charlie Chan In Honolulu?\n- What is the date of birth of the director of Lianna?",
+  "sub_questions": [
+   "What is the date of birth of the director of Charlie Chan In Honolulu?",
+   "What is the date of birth of the director of Lianna?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is the paternal grandmother of Charles Stuart, 1St Earl Of Lennox?",
+  "raw": "[\"Who is the paternal grandmother of Charles Stuart, 1St Earl Of Lennox?\"]",
+  "sub_questions": [
+   "Who is the paternal grandmother of Charles Stuart, 1St Earl Of Lennox?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who is older, The Calcium Kid or Let'S Not Keep In Touch?",
+  "raw": "Which film has the director who is older, The Calcium Kid or Let'S Not Keep In Touch?",
+  "sub_questions": [
+   "Which film has the director who is older, The Calcium Kid or Let'S Not Keep In Touch?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the director of film The Rawhide Terror born?",
+  "raw": "Where was the director of film The Rawhide Terror born?",
+  "sub_questions": [
+   "Where was the director of film The Rawhide Terror born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where did Washington Shirley, 2Nd Earl Ferrers's father study?",
+  "raw": "[\"Where did Washington Shirley, 2Nd Earl Ferrers's father study?\"]",
+  "sub_questions": [
+   "Where did Washington Shirley, 2Nd Earl Ferrers's father study?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who died later, Taxi! or What Price Hollywood??",
+  "raw": "[\n  \"Who directed Taxi!?\",\n  \"Who directed What Price Hollywood??\",\n  \"What is the date of death of the director of Taxi!?\",\n  \"What is the date of death of the director of What Price Hollywood??\",\n  \"Which director died later, the director of Taxi! or the director of What Price Hollywood??\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who directed Taxi!?\",",
+   "\"Who directed What Price Hollywood??\",",
+   "\"What is the date of death of the director of Taxi!?\",",
+   "\"What is the date of death of the director of What Price Hollywood??\",",
+   "\"Which director died later, the director of Taxi! or the director of What Price Hollywood??\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who was born first, The Parson And The Outlaw or The Black Marble?",
+  "raw": "[\"Which film has the director who was born first, The Parson And The Outlaw or The Black Marble?\"]",
+  "sub_questions": [
+   "Which film has the director who was born first, The Parson And The Outlaw or The Black Marble?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What nationality is the performer of song Heart Attack (Enrique Iglesias Song)?",
+  "raw": "[\n  \"Who is the performer of the song Heart Attack (Enrique Iglesias Song)?\",\n  \"What is the nationality of Enrique Iglesias?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who is the performer of the song Heart Attack (Enrique Iglesias Song)?\",",
+   "\"What is the nationality of Enrique Iglesias?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released first, Japoteurs or Cool Hand Luke?",
+  "raw": "[\"Which film was released first, Japoteurs or Cool Hand Luke?\"]",
+  "sub_questions": [
+   "Which film was released first, Japoteurs or Cool Hand Luke?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the place of birth of Jiang Rong's wife?",
+  "raw": "What is the place of birth of Jiang Rong's wife?",
+  "sub_questions": [
+   "What is the place of birth of Jiang Rong's wife?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is Konrad Iii Rudy's paternal grandmother?",
+  "raw": "Who is Konrad Iii Rudy's paternal grandmother?",
+  "sub_questions": [
+   "Who is Konrad Iii Rudy's paternal grandmother?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the place of death of the director of film The Divine Nymph?",
+  "raw": "Where was the place of death of the director of film The Divine Nymph?",
+  "sub_questions": [
+   "Where was the place of death of the director of film The Divine Nymph?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Are both directors of films Coupe De Ville (Film) and Cold Weather from the same country?",
+  "raw": "[\"Are both directors of films Coupe De Ville (Film) and Cold Weather from the same country?\"]",
+  "sub_questions": [
+   "Are both directors of films Coupe De Ville (Film) and Cold Weather from the same country?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Were Henri Bonnefoy and Bertrand Cantat of the same nationality?",
+  "raw": "[\n  \"What is the nationality of Henri Bonnefoy?\",\n  \"What is the nationality of Bertrand Cantat?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the nationality of Henri Bonnefoy?\",",
+   "\"What is the nationality of Bertrand Cantat?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which country the director of film Downloaded (Film) is from?",
+  "raw": "[\"Which country the director of film Downloaded (Film) is from?\"]",
+  "sub_questions": [
+   "Which country the director of film Downloaded (Film) is from?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the award that the director of film A Place Of Rage earned?",
+  "raw": "What is the award that the director of film A Place Of Rage earned?",
+  "sub_questions": [
+   "What is the award that the director of film A Place Of Rage earned?"
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film came out first, Repeated Absences or She Wore A Yellow Ribbon?",
+  "raw": "[independent] When was the film \"Repeated Absences\" released?\n[independent] When was the film \"She Wore A Yellow Ribbon\" released?",
+  "sub_questions": [
+   "When was the film \"Repeated Absences\" released?",
+   "When was the film \"She Wore A Yellow Ribbon\" released?"
+  ],
+  "labels": [
+   "independent",
+   "independent"
+  ],
+  "groups": [
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      0,
+      "When was the film \"Repeated Absences\" released?"
+     ]
+    ]
+   },
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      1,
+      "When was the film \"She Wore A Yellow Ribbon\" released?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "When is Bakaffa's father's birthday?",
+  "raw": "[dependent1] Who is the father of Bakaffa?\n[dependent1] When is that person's birthday?",
+  "sub_questions": [
+   "Who is the father of Bakaffa?",
+   "When is that person's birthday?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Bakaffa?"
+     ],
+     [
+      1,
+      "When is that person's birthday?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where was the performer of song Égérie (Song) born?",
+  "raw": "[dependent1] Who is the performer of the song \"Égérie\"?\n[dependent1] Where was that performer born?",
+  "sub_questions": [
+   "Who is the performer of the song \"Égérie\"?",
+   "Where was that performer born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the performer of the song \"Égérie\"?"
+     ],
+     [
+      1,
+      "Where was that performer born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where did Ruth Scurr's husband graduate from?",
+  "raw": "[dependent1] Who is the husband of Ruth Scurr?\n[dependent1] Where did that husband graduate from?",
+  "sub_questions": [
+   "Who is the husband of Ruth Scurr?",
+   "Where did that husband graduate from?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the husband of Ruth Scurr?"
+     ],
+     [
+      1,
+      "Where did that husband graduate from?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where was the father of Cernach Mac Fogartaig born?",
+  "raw": "[dependent1] Who is the father of Cernach Mac Fogartaig?\n[dependent1] Where was that father born?",
+  "sub_questions": [
+   "Who is the father of Cernach Mac Fogartaig?",
+   "Where was that father born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Cernach Mac Fogartaig?"
+     ],
+     [
+      1,
+      "Where was that father born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "When was Donatus, Landgrave Of Hesse's father born?",
+  "raw": "[dependent1] Who is the father of Donatus, Landgrave of Hesse?\n[dependent1] When was that person born?",
+  "sub_questions": [
+   "Who is the father of Donatus, Landgrave of Hesse?",
+   "When was that person born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Donatus, Landgrave of Hesse?"
+     ],
+     [
+      1,
+      "When was that person born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "What nationality is the composer of song Make The World Move?",
+  "raw": "[dependent1] Who composed the song \"Make The World Move\"?\n[dependent1] What is the nationality of that composer?",
+  "sub_questions": [
+   "Who composed the song \"Make The World Move\"?",
+   "What is the nationality of that composer?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who composed the song \"Make The World Move\"?"
+     ],
+     [
+      1,
+      "What is the nationality of that composer?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which country Mediha Sultan's mother is from?",
+  "raw": "[dependent1] Who is the mother of Mediha Sultan?\n[dependent1] Which country is that person from?",
+  "sub_questions": [
+   "Who is the mother of Mediha Sultan?",
+   "Which country is that person from?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the mother of Mediha Sultan?"
+     ],
+     [
+      1,
+      "Which country is that person from?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film whose director was born first, 45 Fathers or The Intended?",
+  "raw": "[dependent1] Who directed the film \"45 Fathers\"?\n[dependent1] When was that director born?\n[dependent2] Who directed the film \"The Intended\"?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed the film \"45 Fathers\"?",
+   "When was that director born?",
+   "Who directed the film \"The Intended\"?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"45 Fathers\"?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"The Intended\"?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where was the place of death of Johann Georg, Duke Of Saxe-Weissenfels's mother?",
+  "raw": "[dependent1] Who was the mother of Johann Georg, Duke of Saxe-Weissenfels?\n[dependent1] Where was the place of death of that person?",
+  "sub_questions": [
+   "Who was the mother of Johann Georg, Duke of Saxe-Weissenfels?",
+   "Where was the place of death of that person?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who was the mother of Johann Georg, Duke of Saxe-Weissenfels?"
+     ],
+     [
+      1,
+      "Where was the place of death of that person?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is Infanta Isabel Fernanda Of Spain's mother?",
+  "raw": "[independent] Who is the mother of Infanta Isabel Fernanda of Spain?",
+  "sub_questions": [
+   "Who is Infanta Isabel Fernanda Of Spain's mother?"
+  ],
+  "labels": [
+   "independent"
+  ],
+  "groups": [
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      0,
+      "Who is Infanta Isabel Fernanda Of Spain's mother?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "When was Duchess Marie Gabrielle In Bavaria's mother born?",
+  "raw": "[dependent1] Who is the mother of Duchess Marie Gabrielle in Bavaria?\n[dependent1] When was that person born?",
+  "sub_questions": [
+   "Who is the mother of Duchess Marie Gabrielle in Bavaria?",
+   "When was that person born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the mother of Duchess Marie Gabrielle in Bavaria?"
+     ],
+     [
+      1,
+      "When was that person born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is the spouse of the performer of song Burnin' Up (Faith Evans Song)?",
+  "raw": "[dependent1] Who performed the song \"Burnin' Up\" (Faith Evans song)?\n[dependent1] Who is the spouse of that performer?",
+  "sub_questions": [
+   "Who performed the song \"Burnin' Up\" (Faith Evans song)?",
+   "Who is the spouse of that performer?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who performed the song \"Burnin' Up\" (Faith Evans song)?"
+     ],
+     [
+      1,
+      "Who is the spouse of that performer?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where was the father of Daniel Carasso born?",
+  "raw": "[dependent1] Who is the father of Daniel Carasso?\n[dependent1] Where was that person born?",
+  "sub_questions": [
+   "Who is the father of Daniel Carasso?",
+   "Where was that person born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Daniel Carasso?"
+     ],
+     [
+      1,
+      "Where was that person born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director who was born later, This Year'S Blonde or Something Like Love?",
+  "raw": "[dependent1] Who directed the film \"This Year'S Blonde\"?\n[dependent1] When was that director born?\n[dependent2] Who directed the film \"Something Like Love\"?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed the film \"This Year'S Blonde\"?",
+   "When was that director born?",
+   "Who directed the film \"Something Like Love\"?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"This Year'S Blonde\"?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"Something Like Love\"?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director who died later, Behind The Green Lights or Branded A Coward?",
+  "raw": "[dependent1] Who directed \"Behind The Green Lights\"?\n[dependent1] When did that director die?\n[dependent2] Who directed \"Branded A Coward\"?\n[dependent2] When did that director die?",
+  "sub_questions": [
+   "Who directed \"Behind The Green Lights\"?",
+   "When did that director die?",
+   "Who directed \"Branded A Coward\"?",
+   "When did that director die?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed \"Behind The Green Lights\"?"
+     ],
+     [
+      1,
+      "When did that director die?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed \"Branded A Coward\"?"
+     ],
+     [
+      3,
+      "When did that director die?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film whose director was born first, The Boy On The Galloping Horse or Claretta?",
+  "raw": "[dependent1] Who directed \"The Boy On The Galloping Horse\"?\n[dependent1] When was that director born?\n[dependent2] Who directed \"Claretta\"?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed \"The Boy On The Galloping Horse\"?",
+   "When was that director born?",
+   "Who directed \"Claretta\"?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed \"The Boy On The Galloping Horse\"?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed \"Claretta\"?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is Conrad I, Count Of Oldenburg's paternal grandmother?",
+  "raw": "[dependent1] Who is the father of Conrad I, Count Of Oldenburg?\n[dependent1] Who is the mother of that father?",
+  "sub_questions": [
+   "Who is the father of Conrad I, Count Of Oldenburg?",
+   "Who is the mother of that father?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Conrad I, Count Of Oldenburg?"
+     ],
+     [
+      1,
+      "Who is the mother of that father?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director died later, The Third Kiss or Everything'S On Ice?",
+  "raw": "[dependent1] Who directed the film \"The Third Kiss\"?\n[dependent1] When did that director die?\n[dependent2] Who directed the film \"Everything'S On Ice\"?\n[dependent2] When did that director die?",
+  "sub_questions": [
+   "Who directed the film \"The Third Kiss\"?",
+   "When did that director die?",
+   "Who directed the film \"Everything'S On Ice\"?",
+   "When did that director die?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"The Third Kiss\"?"
+     ],
+     [
+      1,
+      "When did that director die?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"Everything'S On Ice\"?"
+     ],
+     [
+      3,
+      "When did that director die?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where did Paulding Farnham's wife die?",
+  "raw": "[dependent1] Who is the wife of Paulding Farnham?\n[dependent1] Where did that wife die?",
+  "sub_questions": [
+   "Who is the wife of Paulding Farnham?",
+   "Where did that wife die?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the wife of Paulding Farnham?"
+     ],
+     [
+      1,
+      "Where did that wife die?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director who was born earlier, Khud-Daar or Murderer In The Fog?",
+  "raw": "[dependent1] Who directed the film \"Khud-Daar\"?\n[dependent1] When was that director born?\n[dependent2] Who directed the film \"Murderer In The Fog\"?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed the film \"Khud-Daar\"?",
+   "When was that director born?",
+   "Who directed the film \"Murderer In The Fog\"?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"Khud-Daar\"?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"Murderer In The Fog\"?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where was the composer of song Moonlight Bay born?",
+  "raw": "[dependent1] Who composed the song \"Moonlight Bay\"?\n[dependent1] Where was that composer born?",
+  "sub_questions": [
+   "Who composed the song \"Moonlight Bay\"?",
+   "Where was that composer born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who composed the song \"Moonlight Bay\"?"
+     ],
+     [
+      1,
+      "Where was that composer born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director born earlier, Wish I Was Here or The Jack-Knife Man?",
+  "raw": "[dependent1] Who directed the film \"Wish I Was Here\"?\n[dependent1] When was that director born?\n[dependent2] Who directed the film \"The Jack-Knife Man\"?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed the film \"Wish I Was Here\"?",
+   "When was that director born?",
+   "Who directed the film \"The Jack-Knife Man\"?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"Wish I Was Here\"?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"The Jack-Knife Man\"?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film came out first, Amman Kovil Thiruvizha or Like Minds?",
+  "raw": "[independent] When was the film \"Amman Kovil Thiruvizha\" released?\n[independent] When was the film \"Like Minds\" released?",
+  "sub_questions": [
+   "When was the film \"Amman Kovil Thiruvizha\" released?",
+   "When was the film \"Like Minds\" released?"
+  ],
+  "labels": [
+   "independent",
+   "independent"
+  ],
+  "groups": [
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      0,
+      "When was the film \"Amman Kovil Thiruvizha\" released?"
+     ]
+    ]
+   },
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      1,
+      "When was the film \"Like Minds\" released?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "What is the date of death of Edsel Ford Ii's father?",
+  "raw": "[dependent1] Who is the father of Edsel Ford II?\n[dependent1] What is the date of death of that person?",
+  "sub_questions": [
+   "Who is the father of Edsel Ford II?",
+   "What is the date of death of that person?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Edsel Ford II?"
+     ],
+     [
+      1,
+      "What is the date of death of that person?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is Henry I Of Cyprus's maternal grandmother?",
+  "raw": "[dependent1] Who is the mother of Henry I of Cyprus?\n[dependent1] Who is the mother of that person?",
+  "sub_questions": [
+   "Who is the mother of Henry I of Cyprus?",
+   "Who is the mother of that person?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the mother of Henry I of Cyprus?"
+     ],
+     [
+      1,
+      "Who is the mother of that person?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "What is the award that the director of film A Place Of Rage earned?",
+  "raw": "[dependent1] Who directed the film \"A Place Of Rage\"?\n[dependent1] What award did that director earn?",
+  "sub_questions": [
+   "Who directed the film \"A Place Of Rage\"?",
+   "What award did that director earn?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"A Place Of Rage\"?"
+     ],
+     [
+      1,
+      "What award did that director earn?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where did the performer of song War Pain go to prison?",
+  "raw": "[dependent1] Who performed the song \"War Pain\"?\n[dependent1] Where did that performer go to prison?",
+  "sub_questions": [
+   "Who performed the song \"War Pain\"?",
+   "Where did that performer go to prison?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who performed the song \"War Pain\"?"
+     ],
+     [
+      1,
+      "Where did that performer go to prison?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is the paternal grandmother of Eleonore Sophie Of Saxe-Weimar?",
+  "raw": "[dependent1] Who is the father of Eleonore Sophie Of Saxe-Weimar?\n[dependent1] Who is the mother of that father?",
+  "sub_questions": [
+   "Who is the father of Eleonore Sophie Of Saxe-Weimar?",
+   "Who is the mother of that father?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Eleonore Sophie Of Saxe-Weimar?"
+     ],
+     [
+      1,
+      "Who is the mother of that father?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film was released more recently, Kuch Kuch Hota Hai or Kalakalappu 2?",
+  "raw": "[independent] When was the film \"Kuch Kuch Hota Hai\" released?\n[independent] When was the film \"Kalakalappu 2\" released?",
+  "sub_questions": [
+   "When was the film \"Kuch Kuch Hota Hai\" released?",
+   "When was the film \"Kalakalappu 2\" released?"
+  ],
+  "labels": [
+   "independent",
+   "independent"
+  ],
+  "groups": [
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      0,
+      "When was the film \"Kuch Kuch Hota Hai\" released?"
+     ]
+    ]
+   },
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      1,
+      "When was the film \"Kalakalappu 2\" released?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who was born later, Jovelian De Koker or Antonio Álvarez Alonso?",
+  "raw": "[independent] When was Jovelian De Koker born?\n[independent] When was Antonio Álvarez Alonso born?",
+  "sub_questions": [
+   "When was Jovelian De Koker born?",
+   "When was Antonio Álvarez Alonso born?"
+  ],
+  "labels": [
+   "independent",
+   "independent"
+  ],
+  "groups": [
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      0,
+      "When was Jovelian De Koker born?"
+     ]
+    ]
+   },
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      1,
+      "When was Antonio Álvarez Alonso born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "What is the date of birth of Karl Eduard Zachariae Von Lingenthal's father?",
+  "raw": "[dependent1] Who is the father of Karl Eduard Zachariae Von Lingenthal?\n[dependent1] What is the date of birth of that father?",
+  "sub_questions": [
+   "Who is the father of Karl Eduard Zachariae Von Lingenthal?",
+   "What is the date of birth of that father?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Karl Eduard Zachariae Von Lingenthal?"
+     ],
+     [
+      1,
+      "What is the date of birth of that father?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film was released first, Moonstruck or One Step To Eternity?",
+  "raw": "[independent] When was the film \"Moonstruck\" released?\n[independent] When was the film \"One Step To Eternity\" released?",
+  "sub_questions": [
+   "When was the film \"Moonstruck\" released?",
+   "When was the film \"One Step To Eternity\" released?"
+  ],
+  "labels": [
+   "independent",
+   "independent"
+  ],
+  "groups": [
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      0,
+      "When was the film \"Moonstruck\" released?"
+     ]
+    ]
+   },
+   {
+    "kind": "independent",
+    "label": "independent",
+    "items": [
+     [
+      1,
+      "When was the film \"One Step To Eternity\" released?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director died first, Her Greatest Love or Beware Of Women?",
+  "raw": "[dependent1] Who directed the film \"Her Greatest Love\"?\n[dependent1] When did that director die?\n[dependent2] Who directed the film \"Beware Of Women\"?\n[dependent2] When did that director die?",
+  "sub_questions": [
+   "Who directed the film \"Her Greatest Love\"?",
+   "When did that director die?",
+   "Who directed the film \"Beware Of Women\"?",
+   "When did that director die?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"Her Greatest Love\"?"
+     ],
+     [
+      1,
+      "When did that director die?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"Beware Of Women\"?"
+     ],
+     [
+      3,
+      "When did that director die?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is the paternal grandmother of Charles Stuart, 1St Earl Of Lennox?",
+  "raw": "[dependent1] Who is the father of Charles Stuart, 1st Earl of Lennox?\n[dependent1] Who is the mother of that father?",
+  "sub_questions": [
+   "Who is the father of Charles Stuart, 1st Earl of Lennox?",
+   "Who is the mother of that father?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Charles Stuart, 1st Earl of Lennox?"
+     ],
+     [
+      1,
+      "Who is the mother of that father?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Who is Konrad Iii Rudy's paternal grandmother?",
+  "raw": "[dependent1] Who is the father of Konrad III Rudy?\n[dependent1] Who is the mother of that father?",
+  "sub_questions": [
+   "Who is the father of Konrad III Rudy?",
+   "Who is the mother of that father?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Konrad III Rudy?"
+     ],
+     [
+      1,
+      "Who is the mother of that father?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director who was born earlier, The Rise And Rise Of Michael Rimmer or Bar 51?",
+  "raw": "[dependent1] Who directed The Rise And Rise Of Michael Rimmer?\n[dependent1] When was that director born?\n[dependent2] Who directed Bar 51?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed The Rise And Rise Of Michael Rimmer?",
+   "When was that director born?",
+   "Who directed Bar 51?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed The Rise And Rise Of Michael Rimmer?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed Bar 51?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Where was the father of Gertrude Mary Woodward born?",
+  "raw": "[dependent1] Who is the father of Gertrude Mary Woodward?\n[dependent1] Where was that father born?",
+  "sub_questions": [
+   "Who is the father of Gertrude Mary Woodward?",
+   "Where was that father born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who is the father of Gertrude Mary Woodward?"
+     ],
+     [
+      1,
+      "Where was that father born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Which film has the director who was born first, Raging Bull or Glen And Randa?",
+  "raw": "[dependent1] Who directed Raging Bull?\n[dependent1] When was that director born?\n[dependent2] Who directed Glen And Randa?\n[dependent2] When was that director born?",
+  "sub_questions": [
+   "Who directed Raging Bull?",
+   "When was that director born?",
+   "Who directed Glen And Randa?",
+   "When was that director born?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed Raging Bull?"
+     ],
+     [
+      1,
+      "When was that director born?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed Glen And Randa?"
+     ],
+     [
+      3,
+      "When was that director born?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": true,
+  "question": "Do both directors of films A Summer'S Tale and Promise At Dawn share the same nationality?",
+  "raw": "[dependent1] Who directed the film \"A Summer'S Tale\"?\n[dependent1] What is the nationality of that director?\n[dependent2] Who directed the film \"Promise At Dawn\"?\n[dependent2] What is the nationality of that director?",
+  "sub_questions": [
+   "Who directed the film \"A Summer'S Tale\"?",
+   "What is the nationality of that director?",
+   "Who directed the film \"Promise At Dawn\"?",
+   "What is the nationality of that director?"
+  ],
+  "labels": [
+   "dependent1",
+   "dependent1",
+   "dependent2",
+   "dependent2"
+  ],
+  "groups": [
+   {
+    "kind": "dependent",
+    "label": "dependent1",
+    "items": [
+     [
+      0,
+      "Who directed the film \"A Summer'S Tale\"?"
+     ],
+     [
+      1,
+      "What is the nationality of that director?"
+     ]
+    ]
+   },
+   {
+    "kind": "dependent",
+    "label": "dependent2",
+    "items": [
+     [
+      2,
+      "Who directed the film \"Promise At Dawn\"?"
+     ],
+     [
+      3,
+      "What is the nationality of that director?"
+     ]
+    ]
+   }
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the place of birth of Jiang Rong's wife?",
+  "raw": "What is the place of birth of Jiang Rong's wife?",
+  "sub_questions": [
+   "What is the place of birth of Jiang Rong's wife?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "When did Leka, Crown Prince Of Albania (Born 1982)'s mother die?",
+  "raw": "[\"When did Leka, Crown Prince Of Albania (Born 1982)'s mother die?\"]",
+  "sub_questions": [
+   "When did Leka, Crown Prince Of Albania (Born 1982)'s mother die?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is Prince Jean Of Luxembourg's mother?",
+  "raw": "Who is Prince Jean Of Luxembourg's mother?",
+  "sub_questions": [
+   "Who is Prince Jean Of Luxembourg's mother?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What nationality is the performer of song Heart Attack (Enrique Iglesias Song)?",
+  "raw": "What nationality is the performer of song Heart Attack (Enrique Iglesias Song)?",
+  "sub_questions": [
+   "What nationality is the performer of song Heart Attack (Enrique Iglesias Song)?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the date of death of Prince Michel Of Bourbon-Parma's mother?",
+  "raw": "What is the date of death of Prince Michel Of Bourbon-Parma's mother?",
+  "sub_questions": [
+   "What is the date of death of Prince Michel Of Bourbon-Parma's mother?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who was born earlier, Sabotage Squad or Devil'S Doorway?",
+  "raw": "Which film has the director who was born earlier, Sabotage Squad or Devil'S Doorway?",
+  "sub_questions": [
+   "Which film has the director who was born earlier, Sabotage Squad or Devil'S Doorway?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released more recently, Kuch Kuch Hota Hai or Kalakalappu 2?",
+  "raw": "[\n  \"What is the publication date of Kuch Kuch Hota Hai?\",\n  \"What is the publication date of Kalakalappu 2?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the publication date of Kuch Kuch Hota Hai?\",",
+   "\"What is the publication date of Kalakalappu 2?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released more recently, Pirates Of The Prairie or Alien Origin?",
+  "raw": "[\n  \"What is the publication date of Pirates Of The Prairie?\",\n  \"What is the publication date of Alien Origin?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the publication date of Pirates Of The Prairie?\",",
+   "\"What is the publication date of Alien Origin?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film came out earlier, Terminator 3: Rise Of The Machines or The Adventures Of Nellie Bly?",
+  "raw": "[\n  \"What is the publication date of Terminator 3: Rise Of The Machines?\",\n  \"What is the publication date of The Adventures Of Nellie Bly?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the publication date of Terminator 3: Rise Of The Machines?\",",
+   "\"What is the publication date of The Adventures Of Nellie Bly?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Do Shari Roman and Stately Wayne Manor share the same nationality?",
+  "raw": "[\"What is the nationality of Shari Roman?\", \"What is the nationality or country of origin of Stately Wayne Manor?\"]",
+  "sub_questions": [
+   "Do Shari Roman and Stately Wayne Manor share the same nationality?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "What is the place of birth of the director of film I'M Not Mata Hari?",
+  "raw": "[\"What is the place of birth of the director of film I'M Not Mata Hari?\"]",
+  "sub_questions": [
+   "What is the place of birth of the director of film I'M Not Mata Hari?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released more recently, Beneath The 12-Mile Reef or Jawani Phir Nahi Ani?",
+  "raw": "[\n  \"What is the publication date of Beneath The 12-Mile Reef?\",\n  \"What is the publication date of Jawani Phir Nahi Ani?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the publication date of Beneath The 12-Mile Reef?\",",
+   "\"What is the publication date of Jawani Phir Nahi Ani?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Are the directors of films Guns Of The Black Witch and Carnal Circuit both from the same country?",
+  "raw": "1. Who is the director of the film \"Guns Of The Black Witch\"?\n2. Who is the director of the film \"Carnal Circuit\"?\n3. What is the nationality/country of citizenship of the director of \"Guns Of The Black Witch\"?\n4. What is the nationality/country of citizenship of the director of \"Carnal Circuit\"?\n5. Are the nationalities/countries of citizenship from questions 3 and 4 the same?",
+  "sub_questions": [
+   "Who is the director of the film \"Guns Of The Black Witch\"?",
+   "Who is the director of the film \"Carnal Circuit\"?",
+   "What is the nationality/country of citizenship of the director of \"Guns Of The Black Witch\"?",
+   "What is the nationality/country of citizenship of the director of \"Carnal Circuit\"?",
+   "Are the nationalities/countries of citizenship from questions 3 and 4 the same?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is older, Les Briley or Jean Charles Carbone?",
+  "raw": "[\"What is Les Briley's date of birth?\", \"What is Jean Charles Carbone's date of birth?\"]",
+  "sub_questions": [
+   "Who is older, Les Briley or Jean Charles Carbone?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "When was Duchess Marie Gabrielle In Bavaria's mother born?",
+  "raw": "[\"When was Duchess Marie Gabrielle In Bavaria's mother born?\"]",
+  "sub_questions": [
+   "When was Duchess Marie Gabrielle In Bavaria's mother born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who is older than the other, American Scary or Cheaper By The Dozen 2? ",
+  "raw": "Which film has the director who is older than the other, American Scary or Cheaper By The Dozen 2?",
+  "sub_questions": [
+   "Which film has the director who is older than the other, American Scary or Cheaper By The Dozen 2? "
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Are the movies Alfred Von Ingelheim'S Dramatic Life and A Summer You Will Never Forget, from the same country?",
+  "raw": "- What is the country of origin of the movie Alfred Von Ingelheim's Dramatic Life?\n- What is the country of origin of the movie A Summer You Will Never Forget?",
+  "sub_questions": [
+   "What is the country of origin of the movie Alfred Von Ingelheim's Dramatic Life?",
+   "What is the country of origin of the movie A Summer You Will Never Forget?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where did Duchess Amelia Of Württemberg's father die?",
+  "raw": "Where did Duchess Amelia Of Württemberg's father die?",
+  "sub_questions": [
+   "Where did Duchess Amelia Of Württemberg's father die?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Are Morrison Lake (Ontario) and Lake Peigneur located in the same country?",
+  "raw": "[\n  \"What country is Morrison Lake (Ontario) located in?\",\n  \"What country is Lake Peigneur located in?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What country is Morrison Lake (Ontario) located in?\",",
+   "\"What country is Lake Peigneur located in?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which country Princess Claude Of Orléans's husband is from?",
+  "raw": "[\"Which country Princess Claude Of Orléans's husband is from?\"]",
+  "sub_questions": [
+   "Which country Princess Claude Of Orléans's husband is from?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the composer of song Moonlight Bay born?",
+  "raw": "[\"Where was the composer of song Moonlight Bay born?\"]",
+  "sub_questions": [
+   "Where was the composer of song Moonlight Bay born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "When did Frances Vane, Marchioness Of Londonderry's father die?",
+  "raw": "When did Frances Vane, Marchioness Of Londonderry's father die?",
+  "sub_questions": [
+   "When did Frances Vane, Marchioness Of Londonderry's father die?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who was born first, The Parson And The Outlaw or The Black Marble?",
+  "raw": "- Who is the director of The Parson And The Outlaw?\n- What is the date of birth of the director of The Parson And The Outlaw?\n- Who is the director of The Black Marble?\n- What is the date of birth of the director of The Black Marble?\n- Which director was born first, the director of The Parson And The Outlaw or the director of The Black Marble?",
+  "sub_questions": [
+   "Who is the director of The Parson And The Outlaw?",
+   "What is the date of birth of the director of The Parson And The Outlaw?",
+   "Who is the director of The Black Marble?",
+   "What is the date of birth of the director of The Black Marble?",
+   "Which director was born first, the director of The Parson And The Outlaw or the director of The Black Marble?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which country Francis Dundas's father is from?",
+  "raw": "Which country Francis Dundas's father is from?",
+  "sub_questions": [
+   "Which country Francis Dundas's father is from?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which country the performer of song Flesh For Fantasy is from?",
+  "raw": "[\n  \"Who is the performer of the song \\\"Flesh For Fantasy\\\"?\",\n  \"What country is that performer from?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who is the performer of the song \\\"Flesh For Fantasy\\\"?\",",
+   "\"What country is that performer from?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Are Paul Curtin and Robert Mcfarlane (Photographer) of the same nationality?",
+  "raw": "[\n  \"What is the nationality of Paul Curtin?\",\n  \"What is the nationality of Robert Mcfarlane (Photographer)?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the nationality of Paul Curtin?\",",
+   "\"What is the nationality of Robert Mcfarlane (Photographer)?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the performer of song Égérie (Song) born?",
+  "raw": "[\"Where was the performer of song Égérie (Song) born?\"]",
+  "sub_questions": [
+   "Where was the performer of song Égérie (Song) born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film was released first, Venmegam or Red Lines?",
+  "raw": "[\"What is the publication date of Venmegam?\", \"What is the publication date of Red Lines?\"]",
+  "sub_questions": [
+   "Which film was released first, Venmegam or Red Lines?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who was born later, Jovelian De Koker or Antonio Álvarez Alonso?",
+  "raw": "[\"Who was born later, Jovelian De Koker or Antonio Álvarez Alonso?\"]",
+  "sub_questions": [
+   "Who was born later, Jovelian De Koker or Antonio Álvarez Alonso?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film whose director was born first, The Stranger'S Return or Honeymoons?",
+  "raw": "[\"Which film whose director was born first, The Stranger'S Return or Honeymoons?\"]",
+  "sub_questions": [
+   "Which film whose director was born first, The Stranger'S Return or Honeymoons?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is the child-in-law of Marie De Namur?",
+  "raw": "1. Who are the children of Marie De Namur?\n2. Who is the spouse of each child of Marie De Namur?",
+  "sub_questions": [
+   "Who are the children of Marie De Namur?",
+   "Who is the spouse of each child of Marie De Namur?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who is the paternal grandmother of Christine Juliane Of Baden-Durlach?",
+  "raw": "Who is the paternal grandmother of Christine Juliane Of Baden-Durlach?",
+  "sub_questions": [
+   "Who is the paternal grandmother of Christine Juliane Of Baden-Durlach?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film whose director was born first, The Barbarian And The Geisha or Men Before Marriage?",
+  "raw": "[\n  \"What is the date of birth of the director of The Barbarian And The Geisha?\",\n  \"What is the date of birth of the director of Men Before Marriage?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"What is the date of birth of the director of The Barbarian And The Geisha?\",",
+   "\"What is the date of birth of the director of Men Before Marriage?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the father of Gertrude Mary Woodward born?",
+  "raw": "[\"Where was the father of Gertrude Mary Woodward born?\"]",
+  "sub_questions": [
+   "Where was the father of Gertrude Mary Woodward born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who is older than the other, Old Loves And New or Kill Me Tomorrow? ",
+  "raw": "[\"Which film has the director who is older than the other, Old Loves And New or Kill Me Tomorrow?\"]",
+  "sub_questions": [
+   "Which film has the director who is older than the other, Old Loves And New or Kill Me Tomorrow? "
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Who was born first out of Aivar Kuusmaa and Andy Summers?",
+  "raw": "[\"Who was born first out of Aivar Kuusmaa and Andy Summers?\"]",
+  "sub_questions": [
+   "Who was born first out of Aivar Kuusmaa and Andy Summers?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Which film has the director who is older than the other, Silver Skates or Ginevra Degli Almieri? ",
+  "raw": "[\n  \"Who is the director of Silver Skates?\",\n  \"Who is the director of Ginevra Degli Almieri?\",\n  \"What is the date of birth of the director of Silver Skates?\",\n  \"What is the date of birth of the director of Ginevra Degli Almieri?\"\n]",
+  "sub_questions": [
+   "[",
+   "\"Who is the director of Silver Skates?\",",
+   "\"Who is the director of Ginevra Degli Almieri?\",",
+   "\"What is the date of birth of the director of Silver Skates?\",",
+   "\"What is the date of birth of the director of Ginevra Degli Almieri?\"",
+   "]"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where did Washington Shirley, 2Nd Earl Ferrers's father study?",
+  "raw": "Where did Washington Shirley, 2Nd Earl Ferrers's father study?",
+  "sub_questions": [
+   "Where did Washington Shirley, 2Nd Earl Ferrers's father study?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the director of film The Girl With The Dragon Tattoo (2009 Film) born?",
+  "raw": "Where was the director of film The Girl With The Dragon Tattoo (2009 Film) born?",
+  "sub_questions": [
+   "Where was the director of film The Girl With The Dragon Tattoo (2009 Film) born?"
+  ]
+ },
+ {
+  "chain": false,
+  "question": "Where was the director of film Flirting With Love born?",
+  "raw": "[\"Where was the director of film Flirting With Love born?\"]",
+  "sub_questions": [
+   "Where was the director of film Flirting With Love born?"
+  ]
+ }
+]

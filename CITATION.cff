@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the software and the paper below."
+title: "agentic-kg-retrieval: modular agentic text-to-Cypher retrieval over knowledge graphs"
+type: software
+version: 0.1.0
+license: Apache-2.0
+repository-code: "https://github.com/GokhanDuruoglu/agentic-kg-retrieval"
+abstract: >-
+  Code, 2WikiMultihopQA data, graph-construction scripts and evaluation for a study of which components of an
+  agentic text-to-Cypher pipeline (answer splitting, execution-feedback retries, query tools, chained
+  sub-questions) earn their cost, compared with BM25, dense and GraphRAG retrieval.
+keywords:
+  - knowledge graphs
+  - agentic retrieval
+  - text-to-Cypher
+  - GraphRAG
+  - multi-hop question answering
+authors:
+  - family-names: Duruoğlu
+    given-names: Gökhan
+    email: gokhan.duruoglu@technarts.com
+    affiliation: TechNarts, Ankara, Turkey
+preferred-citation:
+  type: conference-paper
+  title: "What Pays Off in Agentic Retrieval over Knowledge Graphs? Accuracy, Cost and Time of Pipeline Design Choices"
+  authors:
+    - family-names: Duruoğlu
+      given-names: Gökhan
+      affiliation: TechNarts, Ankara, Turkey
+    - family-names: Gürsoy
+      given-names: Hakan
+      affiliation: TechNarts, Ankara, Turkey
+    - family-names: Toraman
+      given-names: Çağrı
+      affiliation: Middle East Technical University (METU), Ankara, Turkey
+  collection-title: "Advances in Information Retrieval (ECIR 2027), Industry Day"
+  year: 2027

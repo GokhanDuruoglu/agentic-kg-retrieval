@@ -1,0 +1,7 @@
+# GraphRAG local search: entity seeds -> one-hop expansion -> top-20 passages; the answer context holds
+# community reports (10%), entities + relationships (40%) and the passages (50%).
+# Run `akg index graphrag` once first (entity embeddings, communities).
+kind: retrieval
+top_k: 20
+retriever: {type: graphrag, source: 2wiki, top_k_mapped_entities: 10, top_k_relationships: 10, max_context_tokens: 0}
+context: {type: graphrag_local}

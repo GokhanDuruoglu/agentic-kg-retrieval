@@ -1,0 +1,7 @@
+# Graph-DT-GPT (Pan et al., 2026): the three agents only, Decision -> QueryGen (Cypher text, no tools) -> Answer.
+# No validator, no chunking or combiner: all evidence goes into ONE answer call, cut at 1,000,000 tokens.
+kind: agentic
+decomposer: {type: flat}              # flat: sub-questions run in parallel and independently
+query_generator: {type: cypher}
+validator: {type: none}               # one attempt per sub-question
+answerer: {type: single_cut, max_context_tokens: 1000000}

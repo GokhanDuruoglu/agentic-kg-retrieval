@@ -1,0 +1,5 @@
+# Sparse retrieval: BM25 over the passages, top-20 into one answer call.
+kind: retrieval
+top_k: 20
+retriever: {type: bm25, k1: 1.5, b: 0.75}
+context: {type: passages, max_tokens: 128000}

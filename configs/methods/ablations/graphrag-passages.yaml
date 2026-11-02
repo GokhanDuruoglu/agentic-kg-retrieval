@@ -1,0 +1,3 @@
+# GraphRAG retrieval, but the answer model only sees the ranked passages (no reports / entities / relationships).
+extends: graphrag-local
+context: {type: passages, max_tokens: 128000}
